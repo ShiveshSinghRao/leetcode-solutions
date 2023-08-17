@@ -11,7 +11,7 @@ public:
         }
         if(dp[ind]!=-1)return dp[ind];
         //if(nums[ind]==0)return;
-        for(int i =1;i<=nums[ind];i++)
+        for(int i =nums[ind];i>0;i--)
         {
            dp[ind]= check(i+ind,nums,dp);
            if(dp[ind]==1)break;
