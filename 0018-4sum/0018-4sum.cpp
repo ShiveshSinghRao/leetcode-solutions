@@ -20,8 +20,11 @@ public:
                     if(a==target)
                     {
                         s.insert({nums[i],nums[j],nums[k],nums[l]});
+                  
                         k++;
                         l--;
+                        while(k<l && nums[k]==nums[k-1])k=k+1;
+                        while(k<l && nums[l]==nums[l+1])l=l-1;
                     }
                     else if(a>target)
                     {
