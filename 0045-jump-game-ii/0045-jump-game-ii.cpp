@@ -3,7 +3,7 @@ public:
     int mini = INT_MAX;
     int check(int ind ,vector<int>&nums,int counter,vector<int>&dp)
     {
-        if(counter>nums.size())return 0;
+        //if(counter>nums.size())return 0;
         if(ind>=nums.size()-1)
         {
             return 0;
